@@ -1,17 +1,16 @@
 {
   "expo": {
+    "icon": "./assets/icon-placeholder.png",
     "name": "GalleryApp",
     "slug": "gallery-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+
     "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#6C63FF"
-    },
-    "assetBundlePatterns": ["**/*"],
+
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.galleryapp.dev",
@@ -22,21 +21,19 @@
       }
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#6C63FF"
-      },
+
       "versionCode": 1,
       "permissions": [
         "android.permission.READ_EXTERNAL_STORAGE",
         "android.permission.WRITE_EXTERNAL_STORAGE",
         "android.permission.READ_MEDIA_IMAGES",
-        "android.permission.INTERNET"
-      ]
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.galleryapp.dev"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
+
     "plugins": [
       [
         "expo-media-library",
@@ -52,6 +49,11 @@
           "photosPermission": "Allow GalleryApp to access your photos for profile avatar selection."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "86f753d9-ccdb-4aa6-96d0-0f081de16830"
+      }
+    }
   }
 }
