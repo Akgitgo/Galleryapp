@@ -12,6 +12,11 @@
       "android": {
         "buildType": "apk"
       }
+    },
+    "apk": {
+      "android": {
+        "buildType": "apk"
+      }
     }
   }
 }
